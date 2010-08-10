@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{CEC582B8-1669-49B1-BBBE-17487A23D51F}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -50,9 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="todo.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="m_string.rb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
