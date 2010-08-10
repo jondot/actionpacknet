@@ -1,0 +1,53 @@
+= ActionPack.Net
+
+A handful selection of Ruby on Rails' actionpack utility methods, Ruby facets, and some of Ruby core for MVC.NET.
+Moved in from codeplex.
+
+== Usage
+Some quick appetizers:
+
+    3.Days().FromNow();
+    1.Days() * 3
+
+and
+
+    List<string> lst = new List<string>();
+    lst.Add("me");lst.Add("myself");lst.Add("I")
+    lst.Conjoin(", ", " and ") ==> "me, myself and I"
+
+Don't you hate escaping quotes?
+
+    <asp:Label runat="server" Text=<%= "sometext".Quote() %> />
+
+Or this:
+
+    ".*".AsRegex().Match("cool");
+
+And that:
+
+    TextHelper.Highlight("Action pack!", "pack") ==> Action <strong class="highlight">pack</strong>
+
+Perhaps this?
+
+    TextHelper.AutoLink("hello dipid@gmail.com crewl world!",AutoLinkOptions.Email,""); ==> hello <a href=\"mailto:dipid@gmail.com\">dipid@gmail.com</a> crewl world!
+
+Theres also HTML select control generation, pluralize, singularize, humanize and more.
+
+
+== Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== Contributors
+
+* Dotan Nahum (http://github.com/jondot)
+
+== Copyright
+
+Copyright (c) 2010 Dotan Nahum (jondot). See LICENSE for details.
